@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transmission-analyzer"
+version = "0.1.0"
+description = "Analyze COMSOL two-column transmission spectra."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.7",
+]
+
+[project.scripts]
+transmission-analyzer = "transmission_analyzer.cli:main"
